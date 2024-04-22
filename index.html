@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="zone">
-        <nav class="nav-container">   
+        <nav class="nav-container">
+            <div class="toogle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>   
             <ul class="nav-ul">
                 <li class="nav-li company-name">Funiro.</li>
                 <li class="nav-li">Products</li>
                 <li class="nav-li">Rooms</li>
                 <li class="nav-li">Inspirations</li>
             </ul>      
-            <input type="text"  placeholder="Search for minimalist chair">
+            <input class="search normal-screen" type="text"  placeholder="Search for minimalist chair">
         
             <div class="nav-image">
                 <img src="./Image/Heart.png">
@@ -23,6 +30,15 @@
                 <img src="./Image/Ellipse 2.png">
             </div>
         </nav>
+        <input class="search small-screen" type="text"  placeholder="Search for minimalist chair">
+
+        <div class="dropdown-menu">
+            <li class="nav-li company-name">Funiro.</li>
+            <li class="nav-li">Products</li>
+            <li class="nav-li">Rooms</li>
+            <li class="nav-li">Inspirations</li>
+        </div>
+
         <div class="slider-button-container">
             <div class="slider-button">
                 <!-- The dots/circles -->
@@ -49,23 +65,26 @@
     
 
     <!-- Furniture Slideshow -->
-    <div class="furniture-container zone">
-        <img class="hero-section" src="./image/furniture-1.png">
-        <div class="buy">
-            <div class="banner">High-Quality Furniture Just For You</div>
-            <div>Our furniture is made from selected and best quality materials that are suitable for your dream home</div>
-            <div class="shopping">Shop Now</div>
-        </div>
-
-        <div class="furniture-detail">
-            <div class="furniture-name">Bohauss</div>
-            <div class="light-black">Luxury big sofa 2-seat</div>
-            <div class="price-container">
-                <div class="sale-price">Rp 17,000.000</div>
-                <div class="right-arrow">&#8594</div>
+    <div class="zone">
+        <div class="furniture-container">
+            <img class="hero-section" src="./image/furniture-1.png">
+            <div class="buy">
+                <div class="banner">High-Quality Furniture Just For You</div>
+                <div class="normal-text">Our furniture is made from selected and best quality materials that are suitable for your dream home</div>
+                <div class="shopping">Shop Now</div>
+            </div>
+    
+            <div class="furniture-detail">
+                <div class="furniture-name">Bohauss</div>
+                <div class="light-black">Luxury big sofa 2-seat</div>
+                <div class="price-container">
+                    <div class="sale-price">Rp 17,000.000</div>
+                    <div class="right-arrow">&#8594</div>
+                </div>
             </div>
         </div>
     </div>
+    
          
     <div class="values-container">
        <div class="values">
@@ -205,6 +224,8 @@
             </div>             
         </div>
     </div>
-   
+
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
