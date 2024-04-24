@@ -185,7 +185,6 @@ body{
 
 .values-container{
   display: flex;
-  justify-content: space-around;
   margin: 60px 60px;
   gap: 50px;
 }
